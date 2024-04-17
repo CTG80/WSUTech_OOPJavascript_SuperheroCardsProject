@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <title>Superhero Cards</title>
+    </head>
+
+    <body>
+
+
+        <script>
+            // Don't let me define global variables more than once.
+            "use strict";
+
+            // Create array of superhero objects.
+            const avengers = [{
+                name: 'Ironman',
+                power: 'Flight',
+                age: '40'
+            },
+            {
+                name: 'Hulk',
+                power: 'Super Strength',
+                age: '41'  
+            },
+            {
+                name: 'Black Widow',
+                power: 'Slower Aging',
+                age: '39'
+            },
+            {
+                name: 'Captain America',
+                power: 'Enhanced Strength',
+                age: '105'
+            }];
+
+            // First, output everyone's names.
+            for (let i = 0; i < avengers.length; i++) {
+                console.log(avengers[i].name);
+            }
+            
+            // Checks if power is "Super Strength", and outputs hero name to console.
+            for (let i2 = 0; i2 < avengers.length; i2++) {
+                if (avengers[i2].power == "Super Strength") {
+                    console.log("Name: " + avengers[i2].name + " Power: " + avengers[i2].power);
+                }
+            }
+
+            // Checks if hero age is greater than or equal to 50 and outputs hero name and age to console.
+            for (let i3 = 0; i3 < avengers.length; i3++) {
+                if (avengers[i3].age >= 50) {
+                    console.log("Name: " + avengers[i3].name + " Age: " + avengers[i3].age);
+                }
+            }
+        </script>
+
+
+    </body>
+
+
+
+</html>
